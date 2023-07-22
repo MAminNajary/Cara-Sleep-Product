@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'Shabnam';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../assets/Font/shabnam-font-v5.0.1/Shabnam.woff') format('woff');
+  }
+
+.logobar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    background-color: #50b4e0;
+    box-shadow: 0 1px 20px 1px rgb(133, 133, 133);
+    font-family: 'Shabnam';
+}
+
+.logobar img{
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+.logobar h2{
+    color: #ffffff;
+}
