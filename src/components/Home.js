@@ -1,10 +1,23 @@
 import React from 'react';
+
+//////// Styles
 import Styles from '../styles/Home.module.css';
+
+//////// Logo
 import Logo from '../assets/Logo/CARA-PS.png';
+
+//////// Slides
 import slide1 from '../assets/Slider/1.jpg';
 import slide2 from '../assets/Slider/2.jpg';
 import slide3 from '../assets/Slider/3.jpg';
+
+//////// BootStrap
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+//////// AOS
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+AOS.init();
 
 
 const Home = () => {
@@ -20,7 +33,7 @@ const Home = () => {
                     <button>کالای خواب</button>
                     <h2>کالای خواب کارا</h2>
                 </div>
-                <div className={Styles.title}>
+                <div data-aos="fade-up" className={Styles.title}>
                     <h1>
                         با کالای خواب کارا در رویاهات زندگی کن!
                     </h1>
