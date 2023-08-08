@@ -5,11 +5,19 @@ import Styles from '../styles/Home.module.css';
 
 //////// Logo
 import Logo from '../assets/Logo/CARA-PS.png';
+import Instagram from '../assets/Logo/insta.png';
+import Enamad from '../assets/Logo/enamad.png';
 
 //////// Slides
 import slide1 from '../assets/Slider/1.jpg';
 import slide2 from '../assets/Slider/2.jpg';
 import slide3 from '../assets/Slider/3.jpg';
+
+//////// Cards
+import card1 from '../assets/Cards/Card 1.png';
+import card2 from '../assets/Cards/Card 2.png';
+import card3 from '../assets/Cards/Card 3.png';
+import card4 from '../assets/Cards/Card 4.png';
 
 //////// BootStrap
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -67,6 +75,49 @@ const Home = () => {
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
+                </div>
+            </div>
+            <div data-aos="fade-up" className={Styles.main}>
+                <h1>دسته بندی محصولات</h1>
+                <div className={Styles.cards}>
+                    <div>
+                        <button>
+                            <img src={card1} alt='...' />
+                        </button>
+                    </div>
+                    <div>
+                        <button>
+                            <img src={card4} alt='...' />
+                        </button>
+                    </div>
+                    <div>
+                        <button>
+                            <img src={card2} alt='...' />
+                        </button>
+                    </div>
+                    <div>
+                        <button>
+                            <img src={card3} alt='...' />
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div className={Styles.footer}>
+                <div className={Styles.etemad}>
+                    <img src={Logo} alt='...'/>
+                    <img src={Enamad} alt='...'/>
+                </div>
+                <div className={Styles.socialMedia}>
+                    <a href=''>
+                        <img src={Instagram} alt='...'/>
+                    </a>
+                    <h3>از جدیدترین محصولات ما با خبر شوید!</h3>
+                </div>
+                <div className={Styles.option}>
+                    <button>پشتیبانی</button>
+                    <button>سوالات متداول</button>
+                    <button>شکایات و پیشنهادات</button>
+                    <button>شرایط همکاری</button>
                 </div>
             </div>
         </div>
