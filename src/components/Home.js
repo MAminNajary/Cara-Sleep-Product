@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 //////// Styles
 import Styles from '../styles/Home.module.css';
@@ -34,11 +35,11 @@ const Home = () => {
             <div className={Styles.header}>
                 <div className={Styles.logobar}>
                     <img src={Logo} alt='LOGO' />
-                    <button>درباره ما</button>
-                    <button>تماس باما</button>
-                    <button>تشک</button>
-                    <button>ملحفه جات</button>
-                    <button>کالای خواب</button>
+                    <Link to="/AboutUs"><button>درباره ما</button></Link>
+                    <Link to="/Contact"><button>تماس باما</button></Link>
+                    <Link to="/Mattress"><button>تشک</button></Link>
+                    <Link to="/Cloths"><button>ملحفه جات</button></Link>
+                    <Link to="/SleepProducts"><button>کالای خواب</button></Link>
                     <h2>کالای خواب کارا</h2>
                 </div>
                 <div data-aos="fade-up" className={Styles.title}>
@@ -108,7 +109,7 @@ const Home = () => {
                     <img src={Enamad} alt='...'/>
                 </div>
                 <div className={Styles.socialMedia}>
-                    <a href=''>
+                    <a href='.'>
                         <img src={Instagram} alt='...'/>
                     </a>
                     <h3>از جدیدترین محصولات ما با خبر شوید!</h3>
