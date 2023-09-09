@@ -37,9 +37,9 @@ const Home = () => {
                     <img src={Logo} alt='LOGO' />
                     <Link to="/AboutUs"><button>درباره ما</button></Link>
                     <Link to="/Contact"><button>تماس باما</button></Link>
-                    <Link to="/Mattress"><button>تشک</button></Link>
-                    <Link to="/Cloths"><button>ملحفه جات</button></Link>
-                    <Link to="/SleepProducts"><button>کالای خواب</button></Link>
+                    <Link to="/Store/Mattress"><button>تشک</button></Link>
+                    <Link to="/Store/Cloths"><button>ملحفه جات</button></Link>
+                    <Link to="/Store/SleepProducts"><button>کالای خواب</button></Link>
                     <h2>کالای خواب کارا</h2>
                 </div>
                 <div data-aos="fade-up" className={Styles.title}>

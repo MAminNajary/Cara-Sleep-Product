@@ -1,0 +1,8 @@
+.Cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.Cards div {
+    background-color: aqua;
+}

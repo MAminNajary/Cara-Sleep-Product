@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import Styles from '../styles/Store.module.css';
 
 import Logo from '../assets/Logo/CARA-PS.png';
@@ -27,10 +29,10 @@ const Store = () => {
             </div>
             <div className={Styles.navbar}>
                 <div className={Styles.navbarItems}>
-                    <button>کالای خواب</button>
-                    <button>ملحفه</button>
-                    <button>تشک</button>
-                    <button>متفرقه</button>
+                    <Link to="/Store/SleepProducts"><button>کالای خواب</button></Link>
+                    <Link to="/Store/Cloths"><button>ملحفه</button></Link>
+                    <Link to="/Store/Mattress"><button>تشک</button></Link>
+                    <Link to="/Store/Etc"><button>متفرقه</button></Link>
                 </div>
             </div>
         </div>
