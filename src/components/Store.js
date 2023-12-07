@@ -10,7 +10,9 @@ const Store = () => {
         <div>
             <div className={Styles.header}>
                 <div className={Styles.logo}>
-                    <img src={Logo} alt='logo' />
+                    <Link to="/Home">
+                        <img src={Logo} alt='logo' />
+                    </Link>
                 </div>
                 <div className={Styles.searchBox}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">

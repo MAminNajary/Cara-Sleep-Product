@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'Shabnam';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../assets/Font/shabnam-font-v5.0.1/Shabnam.woff') format('woff');
+  }
+
+.ProductDetails {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: right;
+    direction: rtl;
+    padding: 50px 60px;
+    width: 100%;
+    font-family: 'Shabnam';
+}
+
+.img img{
+    width: 300px;
+    margin-left: 200px;
+    height: 300px;
+}
+
+.info h1{
+    padding: 50px 0px;
+    font-size: 30px;
+}
+.info h2{
+    color: rgb(56, 56, 56);
+    font-size: 20px;
+    text-wrap: balance;
+    padding: 50px 0px;
+}
+.info p{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 102, 255);
+    text-align: center;
+    font-size: 17px;
+    border-radius: 15px;
+    font-weight: 900;
+    width: 30%;
+    padding: 7px;
+}
+
+.button {
+    border: 1px solid seagreen;
+    background-color: white;
+    font-family: 'Shabnam';
+    border-radius: 13px;
+    color: seagreen;
+    padding: 10px 15px;
+    margin: 20px 0px;
+    transition: .3s;
+}
+.button:hover {
+    border: 1px solid seagreen;
+    background-color: seagreen;
+    color: white;
+}

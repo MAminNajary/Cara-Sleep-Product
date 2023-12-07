@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'Shabnam';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../assets/Font/shabnam-font-v5.0.1/Shabnam.woff') format('woff');
+  }
+  
+#Link {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.Products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items:flex-start;
+    margin: 70px;
+    text-decoration: none;
+    font-style: unset;
+}
+.Product {
+    margin: 20px 20px;
+    padding: 40px 20px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 20px 1px #333;
+    background-color: #00578d;
+    transition: 0.3s;
+}
+.Product:hover {
+    background-color: #003b6e;
+    transform: translate(0, -10px);
+}
+.Product div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Product div img {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px 80px 20px 90px;
+    margin-bottom: 30px;
+}
+.button {
+    border: 1px solid seagreen;
+    background-color: white;
+    font-family: 'Shabnam';
+    border-radius: 13px;
+    color: seagreen;
+    padding: 10px 15px;
+    margin: 20px 0px;
+    transition: .3s;
+}
+.button:hover {
+    border: 1px solid seagreen;
+    background-color: seagreen;
+    color: white;
+}
+.Product div h4 {
+    font-size: 15px;
+    color: #a0a0a0;
+    transition: .5s;
+}
+.Product div h4:hover {
+    color: #ffffff;
+}
