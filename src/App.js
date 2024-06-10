@@ -9,6 +9,7 @@ import Etc from './components/Products/Etc';
 import ProductDetails from './components/Shared/ProductDetails';
 
 import ProductContextProvider from './components/context/ProductContextProvider';
+import Carts from './components/Shared/Carts';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path='/' element={<Navigate to='/Home'/>}/>
 
           <Route path='/Store/details/:id' element={<ProductDetails />} />
+          <Route path='/Store/Carts' element={<Carts />} />
       </Routes>
     </ProductContextProvider>
   );

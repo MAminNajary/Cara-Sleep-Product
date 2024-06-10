@@ -13,7 +13,7 @@ export const useProductDetails = (id) => {
 }
 
 const ProductContextProvider = (props) => {
-
+    
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
@@ -23,6 +23,7 @@ const ProductContextProvider = (props) => {
         
         fetchAPI();
     }, [])
+
 
     return (
         <ProductsContext.Provider value={products}>
