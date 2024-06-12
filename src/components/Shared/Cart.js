@@ -1,42 +1,64 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
+
+import Carts from './Carts';
 
 import Styles from '../../styles/Cart.module.css';
 
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 
 
 const Cart = ({ productData }) => {
 
-    const cart = useSelector((store) => store);
+    const [count, setCount] = useState(1);
+    const [price, setPrice] = useState();
+
+    useEffect(() => {
+        setPrice(productData.price * count);
+      }, [count]);
+
+
+    const increaseCount = () => {
+        setCount(count + 1);
+    };
+
+    const decreaseCount = () => {
+        if (count > 1) {
+        setCount(count - 1);
+        }
+    };
+
+    
     const dispatch = useDispatch();
-    const quantity = 1;
 
     return (
+        <>
         <div className={Styles.cart}>
-            <div>
-                <img src={productData.image} alt='0' />
-                <h2>{productData.title}</h2>
-                <div className={Styles.number}>
-                    <button>+</button>
-                    <span>تعداد :{quantity}</span>
-                    <button>-</button>
-                </div>
-                <div className={Styles.price}>
-                    <h5>
-                        قیمت :  {productData.price} تومان
-
-                    </h5>
-                </div>
                 <div>
+                    <img src={productData.image} alt='0' />
+                    <h2>{productData.title}</h2>
+                    <div className={Styles.number}>
+                    <button onClick={increaseCount}>+</button>
+                        <span>تعداد : {count}</span>
+                    <button onClick={decreaseCount}>-</button>
+                    </div>
+                    <div className={Styles.price}>
+                        <h5>
+                            قیمت :  {price} تومان
 
-                    <button onClick={() => dispatch({type: "REMOVE", payload: productData})} className={Styles.button}>
-                        حذف از سبد
+                        </h5>
+                        <Carts price={price} />
+                    </div>
+                    <div>
 
-                    </button>
+                        <button onClick={() => dispatch({type: "REMOVE", payload: productData})} className={Styles.deleteButton}>
+                            حذف از سبد
 
+                        </button>
+
+                    </div>
                 </div>
             </div>
-        </div>
+        </>
     );
 };
 

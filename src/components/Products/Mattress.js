@@ -5,6 +5,7 @@ import Product from '../Shared/Product';
 import {ProductsContext} from '../context/ProductContextProvider';
 
 import Styles from '../../styles/Product.module.css';
+import Footer from '../Footer';
 
 const Mattress = () => {
 
@@ -19,6 +20,7 @@ const Mattress = () => {
                     sleepProducts.map(product => <Product key={product.id} productData={product} />)
                 }
             </div>
+            <Footer />
         </div>
     );
 };

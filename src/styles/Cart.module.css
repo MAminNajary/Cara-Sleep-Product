@@ -2,8 +2,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: auto;
     margin-top: 30px;
-    width: 100%;
+    width: 70%;
+    background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+    border-radius: 40px;
 }
 .cart div {
     display: flex;
@@ -12,13 +15,11 @@
     text-align: right;
     direction: rtl;
     margin: auto;
-    width: 60%;
+    width: 100%;
     height: 360px;
-    background-color: #00578d;
     font-family: 'Shabnam';
     border-radius: 50px;
     color: #ffffff;
-
 }
 .cart div img {
     width: 200px;
@@ -38,7 +39,7 @@
     text-align: center;
     font-size: 15px;
     border-radius: 15px;
-    width: 150px;
+    width: 250px;
     height: 40px;
     padding: 10px;
 
@@ -49,3 +50,17 @@
     border-radius: 10px;
     margin: 0 10px;
 }
+.deleteButton {
+    background-color: #ff495c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .delete-button:hover {
+    background-color: #e03446;
+  }

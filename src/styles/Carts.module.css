@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'Shabnam';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../assets/Font/shabnam-font-v5.0.1/Shabnam.woff') format('woff');
+  }
+.Paymentbar {
+    font-family: 'shabnam';
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(90deg, #00d2ff 0%, #0093b4 100%);
+    margin: 20px 0;
+}
+.ShowPrice {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.ShowPrice p{
+    margin-right: 30px;
+    font-size: 20px;
+}
+.button {
+    border: 1px solid seagreen;
+    background-color: seagreen;
+    color: white;
+    font-family: 'Shabnam';
+    border-radius: 13px;
+    padding: 10px 15px;
+    margin: 20px 0px;
+    transition: .3s;
+}
+.button:hover {
+    background-color: rgb(37, 109, 68);
+}
+

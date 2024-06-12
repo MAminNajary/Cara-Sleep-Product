@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import Styles from '../styles/Store.module.css';
 
+//////// Logo
 import Logo from '../assets/Logo/CARA-PS.png';
 
 const Store = () => {

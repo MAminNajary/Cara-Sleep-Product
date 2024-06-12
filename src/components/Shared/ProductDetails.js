@@ -9,6 +9,7 @@ import Styles from '../../styles/ProductDetails.module.css';
 //////// AOS
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
+import Footer from '../Footer';
 AOS.init();
 
 
@@ -44,6 +45,7 @@ const ProductDetails = () => {
                 </div>
 
             </div>
+            <Footer />
         </>
     );
 };
